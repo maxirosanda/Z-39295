@@ -1,47 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio</title>
-    </head>
-    <body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./multimedia/img/gamerpc.png" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        table{
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+        td,th{
+            border: solid 1px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
         <nav>
-
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/contactos.html">Contactos</a></li>
+                <li><a href="#Pie">Pie</a></li>
+            </ul>   
         </nav>
-        <header>
-            <h1>Computación <span>Maximiliano</span></h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, 
-            perspiciatis repudiandae? Ratione perferendis dolore cumque non officia, 
-            nemo sed dolor repellat alias est temporibus mollitia aliquam. 
-            Possimus molestias assumenda maiores?</p>
-        </header>
-        <main>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
-                elit. Blanditiis beatae nobis odio aut incidunt rerum
-                recusandae, aspernatur expedita atque perferendis at 
-                enim eius voluptate excepturi, nam quam accusantium 
-                veniam rem.</p>
-                <div>
-                    <div>
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in!</p>
-                    </div>
-                    <div>
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in!</p>
-                    </div>
-                </div>
-        </main>
+    </header>
+    <main>
+        <ul>
+            <li>Coca Cola</li>
+            <li>Pan</li>
+            <li>Queso</li>
+        </ul>
+        <ol>
+            <li>Banana</li>
+            <li>Lechuga</li>
+        </ol>
+        <ol>
+            <li>Supermercado
+                <ul>
+                    <li>Coca Cola</li>
+                    <li>Pan</li>
+                    <li>Queso</li>
+                </ul>
+            </li>
+            <li>Verduleria
+                <ol>
+                    <li>Banana</li>
+                    <li>Lechuga</li>
+                </ol>
+            </li>
+        </ol>
+        <table>
+            <tr>
+                <th>Turno</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+            </tr>
+            <tr>
+                <th>Mañana</th>
+                <td>Lengua</td>
+                <td>Matemática</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <th>Tarde</th>
+                <td>Física</td>
+                <td>Química</td>
+                <td>Inglés</td>
+            </tr>
+        </table>
+        <a href="https://es-la.facebook.com/" target="_blank">Facebook</a>
         <aside>
-            
-        </aside>
-        <br>
-        <br>
-        <hr>
-        <footer>
 
-        </footer>
-    </body>
+        </aside>
+    </main>
+    <footer id="Pie">
+        <div>
+           <a href="https://www.instagram.com/" target="_blank"><img src="./multimedia/img/redes/insta-01.png" alt="Logo de instagram"></a>
+        </div>
+    </footer>
+</body>
 </html>
