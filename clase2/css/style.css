@@ -3,6 +3,7 @@
     padding: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 table{
     border: solid 1px;
     border-collapse: collapse;
@@ -12,7 +13,10 @@ table{
     margin: 5px;
     background-color: blueviolet;
 }
-th,td{
+.lista-desordenada li{
+    color: white;
+}
+.tabla th,td{
     border: solid 1px;
     padding: 10px;
 }
@@ -33,12 +37,15 @@ th,td{
 }
 
 .titulo{
-    text-align: center;
+    text-align: end;
     color:#f4f5f7;
     font-size:48px ;
     font-style: italic;
     font-weight:100;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+.titulo span {
+    color: red;
 }
 
 .portada{
