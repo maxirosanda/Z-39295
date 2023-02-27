@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titulo{
+    color: blue;
+    text-align: center;
+}
+.contenedor-cajas{
+    margin-top: 30px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: blue;
+}
+.caja4{
+    order: -1;
+}
