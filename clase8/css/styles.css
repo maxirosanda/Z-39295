@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boton{
+    display: block;
+    width: 120px;
+    text-align: center;
+    background-color: rgb(176, 9, 9);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.boton:hover{
+    background-color: rgb(9, 9, 145);
+    
+}
+.boton:hover + .caja{
+    background-color: aqua;
+    color: white;
+}
+.boton:visited{
+    background-color: blueviolet;
+}
+.boton:active{
+    background-color: chartreuse;
+}
+/*div:not(.caja){
+    width: 50%;
+    margin: 10px;
+}
+*/
+.caja{
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.caja:hover{
+    background-color: brown;
+    color: white;
+}
+.caja2{
+    width: 250px;
+}
+
+.caja2 img{
+    width:100%;
+    margin: 10px;
+}
+.caja2 p:nth-child(4){
+    color: blue;
+}
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tarjeta{
+    width: 350px;
+    border: 2px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 15px;
+}
+.tarjeta__img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.tarjeta__titulo{
+    padding: 10px;
+    font-size: 24px;
+
+}
+
+.tarjeta__desc{
+    padding: 20px;
+}
+.tarjeta__titulo--destacar{
+    font-size: 28px;
+}
+
+.tarjeta__desc--destacar{
+    font-size: 24px;
+}
+
+.tarjeta__btn{
+    display: block;
+    width: 120px;
+    text-align: center;
+    background-color: rgb(176, 9, 9);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+}

@@ -1,8 +1,11 @@
+/* Reseteo */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Fin reseteo */
 /* Navegador */
 .navegador{
     background-color: blue;
@@ -19,13 +22,46 @@
     list-style: none;
     display: flex;
     justify-content: end;
+    transition: 0.5s;
 }
 .navegador ul li a {
     display: block;
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     padding: 20px 10px;
+}
+.navegador .fa-bars{
+    display: none;
+}
+@media(max-width:550px){
+    .navegador .fa-bars{
+        display: block;
+        font-size: 32px;
+        margin: 10px;
+        color: white;
+    }
+    .navegador .fa-bars:hover + ul{
+       right: 0;
+    }
+    .navegador ul:hover{
+        right: 0;
+    }
+    .navegador ul{
+        right: -350px;
+        top: 0;
+        position: fixed;
+        background-color: white;
+        width: 250px;
+        height: 100vh;
+        z-index: 5;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .navegador ul li a{
+        color: black;
+    }
 }
 /* Fin Navegador */
 /* Portada */
@@ -34,7 +70,7 @@
 }
 .portada img {
     width: 100%;
-    height: 250px;
+    height: 450px;
     object-fit: cover;
 }
 
@@ -44,13 +80,43 @@
     left: 50px;
     color: white;
 }
+.portada .contenido h1{
+    font-size: 64px;
+}
+.portada .contenido p{
+    font-size: 32px;
+}
+
 .portada .contenido button{
     padding: 5px 20px;
+    font-size: 24px;
     border: none;
     margin: 10px;
     background-color: blue;
     color: white;
     border-radius: 5px;
+}
+@media(max-width:800px){
+    .portada img{
+        height: 300px;
+    }
+    .portada .contenido h1{
+        font-size: 48px;
+    }
+    .portada .contenido p {
+        font-size: 24px;
+    }
+    .portada .contenido button{
+        font-size: 20px;
+    }
+}
+@media(max-width:550px){
+    .portada .contenido h1{
+        font-size: 24px;
+    }
+    .portada .contenido p{
+        font-size: 20px;
+    }
 }
 /* Fin Portada */
 /* Productos destacados */
@@ -90,3 +156,132 @@
     color: white;
     border-radius: 5px;
 }
+
+/*Formulario de contactos */
+.formulario{
+    width: 700px;
+    background-color: blue;
+    margin: 40px auto;
+    border-radius:5px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contactanos contactanos"
+                         "nombre      email"
+                         "tel         asunto"
+                         "mensaje     mensaje"
+                         "boton       boton";
+}
+
+.formulario h2{
+    grid-area: contactanos;
+    color: white;
+    padding: 10px;
+}
+.formulario label {
+    display: flex;
+    flex-direction: column;
+    color:white;
+    padding: 10px;
+}
+.formulario label input ,.formulario label textarea{
+    background-color: blue;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: white;
+}
+.formulario label:nth-child(2){
+    grid-area: nombre;
+}
+.formulario label:nth-child(3){
+    grid-area: email;
+}
+.formulario label:nth-child(4){
+    grid-area: tel;
+}
+.formulario label:nth-child(5){
+    grid-area: asunto;
+}
+.formulario label:nth-child(6){
+    grid-area: mensaje;
+}
+.formulario button{
+    grid-area: boton;
+    background-color: white;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+
+}
+@media(max-width:750px){
+    .formulario{
+        width: auto;
+        margin: 40px 0px;
+        border-radius:none;
+        grid-template-columns: 1fr;
+        grid-template-areas: "contactanos"
+                             "nombre"
+                             "email"
+                             "tel"
+                             "asunto"
+                             "mensaje"
+                             "boton";
+    }
+}
+
+/* Footer*/
+.footer{
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+.footer .compania{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .compania .redes a i{
+    color: white;
+    font-size: 24px;
+}
+.footer .sucursales{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .sucursal{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.footer .sucursal ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer .sucursal ul li a{
+    color: white;
+    text-decoration: none;
+}
+.footer .sucursal ul li a i{
+    margin-right: 5px;
+}
+@media(max-width:1200px){
+    .footer{
+        justify-content: start;
+    }
+}
+
+
+/* Fin footer */
