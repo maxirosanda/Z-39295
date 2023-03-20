@@ -10,13 +10,18 @@
 .navegador{
     background-color: blue;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
+    position: relative;
+    z-index: 100;
 }
 .navegador .logo{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
+    position: absolute;
+    top: -5px;
+    left: 10px;
 }
 .navegador ul {
     list-style: none;
