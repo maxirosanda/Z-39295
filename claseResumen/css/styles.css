@@ -4,29 +4,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.row,.container,.container-fluid{
+    margin: 0;
+    padding: 0;
+}
 /* Fin reseteo */
 /* Navegador */
 .navegador{
     background-color: blue;
-    display: flex;
-    justify-content: end;
+    /*display: flex;
+    justify-content: between;
     align-items: center;
-    position: relative;
-    z-index: 100;
+     */
+
+   
 }
 .navegador .logo{
     width: 90px;
     height: 90px;
     object-fit: cover;
-    position: absolute;
-    top: -5px;
-    left: 10px;
+
 }
 .navegador ul {
     list-style: none;
+    /*
     display: flex;
     justify-content: end;
+    */
     transition: 0.5s;
 }
 .navegador ul li a {
@@ -34,12 +38,12 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
-    padding: 20px 10px;
+   /* padding: 20px 10px;*/
 }
 .navegador .fa-bars{
     display: none;
 }
-@media(max-width:550px){
+@media(max-width:576px){
     .navegador .fa-bars{
         display: block;
         font-size: 32px;
@@ -60,9 +64,11 @@
         width: 250px;
         height: 100vh;
         z-index: 5;
+        /*
         flex-direction: column;
         justify-content: start;
         align-items: center;
+        */
     }
     .navegador ul li a{
         color: black;
@@ -130,26 +136,38 @@
     
 }
 .contenedor-destacadas{
+    /*
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    */
 }
 .tarjeta-destacada{
     width: 460px;
     margin: 10px;
-    display: flex;
+   /* display: flex;*/
 }
+
 .tarjeta-destacada img {
     width: 200px;
     height: 120px;
     object-fit: cover;
 }
+@media(max-width:576px){
 
+    .tarjeta-destacada{
+        width: 250px;
+    }
+    .tarjeta-destacada img{
+        width: 100%;
+    }
+}
 .tarjeta-destacada .contenido {
-    display: flex;
+    /*display: flex;
     margin: 10px;
     flex-direction: column;
     justify-content: center;
+    */
     
 }
 .tarjeta-destacada .contenido button{
@@ -241,39 +259,49 @@
 .footer{
     background-color: blue;
     color: white;
+    /*
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
+    */
 }
 .footer .compania{
     width: 500px;
+    /*
     display: flex;
     flex-direction: column;
     gap: 10px;
+    */
 }
 
 .footer .compania .redes a i{
     color: white;
     font-size: 24px;
 }
+/*
 .footer .sucursales{
     display: flex;
     flex-wrap: wrap;
 }
+*/
 .footer .sucursal{
     width: 200px;
+    /*
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 10px;
+    */
 }
 
 .footer .sucursal ul {
     list-style: none;
+    /*
     display: flex;
     flex-direction: column;
     gap: 5px;
+    */
 }
 .footer .sucursal ul li a{
     color: white;
@@ -282,11 +310,12 @@
 .footer .sucursal ul li a i{
     margin-right: 5px;
 }
+/*
 @media(max-width:1200px){
     .footer{
         justify-content: start;
     }
 }
-
+*/
 
 /* Fin footer */
