@@ -1,0 +1,52 @@
+.navegador{
+    background-color: $bg-color;
+    .logo{
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+    
+    }
+    .fa-bars{
+        display: none;
+    }
+    ul {
+        list-style: none;
+        transition: 0.5s;
+        li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
+
+@media(max-width:576px){
+    .navegador{
+        .fa-bars{
+            display: block;
+            font-size: 32px;
+            margin: 10px;
+            color: white;
+            &:hover + ul{
+                right: 0;
+             }
+        }
+        ul{
+            right: -350px;
+            top: 0;
+            position: fixed;
+            background-color: white;
+            width: 250px;
+            height: 100vh;
+            z-index: 5;
+            &:hover{
+                right: 0;
+            }
+            li a{
+                color: black;
+            }
+        }
+        
+
+    }
+}

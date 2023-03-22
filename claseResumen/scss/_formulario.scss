@@ -1,0 +1,75 @@
+/*Formulario de contactos */
+.formulario{
+    width: 700px;
+    background-color: $bg-color;
+    box-shadow: 1px 1px 7px 2px #000000;
+    margin: 40px auto;
+    border-radius:5px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contactanos contactanos"
+                         "nombre      email"
+                         "tel         asunto"
+                         "mensaje     mensaje"
+                         "boton       boton";
+}
+
+.formulario h2{
+    grid-area: contactanos;
+    color: white;
+    padding: 10px;
+}
+.formulario label {
+    display: flex;
+    flex-direction: column;
+    color:white;
+    padding: 10px;
+}
+.formulario label input ,.formulario label textarea{
+    background-color: $bg-color;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: white;
+}
+.formulario label:nth-child(2){
+    grid-area: nombre;
+}
+.formulario label:nth-child(3){
+    grid-area: email;
+}
+.formulario label:nth-child(4){
+    grid-area: tel;
+}
+.formulario label:nth-child(5){
+    grid-area: asunto;
+}
+.formulario label:nth-child(6){
+    grid-area: mensaje;
+}
+.formulario button{
+    grid-area: boton;
+    background-color: white;
+    color: $bg-color;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+
+}
+@media(max-width:750px){
+    .formulario{
+        width: auto;
+        margin: 40px 0px;
+        border-radius:none;
+        grid-template-columns: 1fr;
+        grid-template-areas: "contactanos"
+                             "nombre"
+                             "email"
+                             "tel"
+                             "asunto"
+                             "mensaje"
+                             "boton";
+    }
+}

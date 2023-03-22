@@ -1,0 +1,22 @@
+.navegador {
+  background-color: #960e0e;
+}
+.navegador ul {
+  list-style: none;
+}
+.navegador ul li a {
+  width: 70px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.navegador ul li a:hover {
+  font-weight: 500;
+}
+
+.pie {
+  background-color: #960e0e;
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

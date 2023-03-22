@@ -1,0 +1,30 @@
+/* Footer*/
+.footer{
+    background-color: $bg-color;
+    color: white;
+}
+.footer .compania{
+    width: 500px;
+}
+
+.footer .compania .redes a i{
+    color: white;
+    font-size: 24px;
+}
+
+.footer .sucursal{
+    width: 200px;
+}
+
+.footer .sucursal ul {
+    list-style: none;
+}
+.footer .sucursal ul li a{
+    color: white;
+    text-decoration: none;
+}
+.footer .sucursal ul li a i{
+    margin-right: 5px;
+}
+
+/* Fin footer */

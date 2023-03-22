@@ -1,0 +1,21 @@
+$bg-color:#960e0e;
+.navegador{
+    background-color: $bg-color;
+    ul{
+        list-style: none;
+        li a{
+            width: 70px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            &:hover{
+                font-weight: 500;
+            }
+        
+        }
+    }
+}
+.pie{
+    background-color: $bg-color;
+    height: 40px;
+}

@@ -1,321 +1,251 @@
-/* Reseteo */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.row,.container,.container-fluid{
-    margin: 0;
-    padding: 0;
-}
-/* Fin reseteo */
-/* Navegador */
-.navegador{
-    background-color: blue;
-    /*display: flex;
-    justify-content: between;
-    align-items: center;
-     */
 
-   
+.row, .container, .container-fluid {
+  margin: 0;
+  padding: 0;
 }
-.navegador .logo{
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
 
+.navegador {
+  background-color: #1205a0;
+}
+.navegador .logo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+.navegador .fa-bars {
+  display: none;
 }
 .navegador ul {
-    list-style: none;
-    /*
-    display: flex;
-    justify-content: end;
-    */
-    transition: 0.5s;
+  list-style: none;
+  transition: 0.5s;
 }
 .navegador ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .navegador .fa-bars {
     display: block;
-    text-decoration: none;
+    font-size: 32px;
+    margin: 10px;
     color: white;
-    font-size: 20px;
-   /* padding: 20px 10px;*/
+  }
+  .navegador .fa-bars:hover + ul {
+    right: 0;
+  }
+  .navegador ul {
+    right: -350px;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    width: 250px;
+    height: 100vh;
+    z-index: 5;
+  }
+  .navegador ul:hover {
+    right: 0;
+  }
+  .navegador ul li a {
+    color: black;
+  }
 }
-.navegador .fa-bars{
-    display: none;
-}
-@media(max-width:576px){
-    .navegador .fa-bars{
-        display: block;
-        font-size: 32px;
-        margin: 10px;
-        color: white;
-    }
-    .navegador .fa-bars:hover + ul{
-       right: 0;
-    }
-    .navegador ul:hover{
-        right: 0;
-    }
-    .navegador ul{
-        right: -350px;
-        top: 0;
-        position: fixed;
-        background-color: white;
-        width: 250px;
-        height: 100vh;
-        z-index: 5;
-        /*
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        */
-    }
-    .navegador ul li a{
-        color: black;
-    }
-}
-/* Fin Navegador */
-/* Portada */
-.portada{
-    position: relative;
+.portada {
+  position: relative;
 }
 .portada img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
 }
-
 .portada .contenido {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    color: white;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  color: white;
 }
-.portada .contenido h1{
-    font-size: 64px;
+.portada .contenido h1 {
+  font-size: 64px;
+  text-shadow: 1px 1px 2px #000000;
 }
-.portada .contenido p{
-    font-size: 32px;
+.portada .contenido p {
+  font-size: 64px;
+  text-shadow: 1px 1px 2px #000000;
+}
+.portada .contenido button {
+  padding: 5px 20px;
+  font-size: 24px;
+  border: none;
+  margin: 10px;
+  background-color: #1205a0;
+  color: white;
+  border-radius: 5px;
 }
 
-.portada .contenido button{
-    padding: 5px 20px;
+@media (max-width: 800px) {
+  .portada img {
+    height: 300px;
+  }
+  .portada .contenido h1 {
+    font-size: 48px;
+  }
+  .portada .contenido p {
     font-size: 24px;
-    border: none;
-    margin: 10px;
-    background-color: blue;
-    color: white;
-    border-radius: 5px;
-}
-@media(max-width:800px){
-    .portada img{
-        height: 300px;
-    }
-    .portada .contenido h1{
-        font-size: 48px;
-    }
-    .portada .contenido p {
-        font-size: 24px;
-    }
-    .portada .contenido button{
-        font-size: 20px;
-    }
-}
-@media(max-width:550px){
-    .portada .contenido h1{
-        font-size: 24px;
-    }
-    .portada .contenido p{
-        font-size: 20px;
-    }
-}
-/* Fin Portada */
-/* Productos destacados */
-.titulo-destacados{
-    margin: 10px;
-    
-}
-.contenedor-destacadas{
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    */
-}
-.tarjeta-destacada{
-    width: 460px;
-    margin: 10px;
-   /* display: flex;*/
-}
-
-.tarjeta-destacada img {
-    width: 200px;
-    height: 120px;
-    object-fit: cover;
-}
-@media(max-width:576px){
-
-    .tarjeta-destacada{
-        width: 250px;
-    }
-    .tarjeta-destacada img{
-        width: 100%;
-    }
-}
-.tarjeta-destacada .contenido {
-    /*display: flex;
-    margin: 10px;
-    flex-direction: column;
-    justify-content: center;
-    */
-    
-}
-.tarjeta-destacada .contenido button{
-    width: 100px;
-    padding: 5px 20px;
-    border: none;
-    margin: 10px;
-    background-color: blue;
-    color: white;
-    border-radius: 5px;
-}
-
-/*Formulario de contactos */
-.formulario{
-    width: 700px;
-    background-color: blue;
-    margin: 40px auto;
-    border-radius:5px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "contactanos contactanos"
-                         "nombre      email"
-                         "tel         asunto"
-                         "mensaje     mensaje"
-                         "boton       boton";
-}
-
-.formulario h2{
-    grid-area: contactanos;
-    color: white;
-    padding: 10px;
-}
-.formulario label {
-    display: flex;
-    flex-direction: column;
-    color:white;
-    padding: 10px;
-}
-.formulario label input ,.formulario label textarea{
-    background-color: blue;
-    border: none;
-    border-bottom: 1px solid white;
-    padding: 10px;
-    color: white;
-}
-.formulario label:nth-child(2){
-    grid-area: nombre;
-}
-.formulario label:nth-child(3){
-    grid-area: email;
-}
-.formulario label:nth-child(4){
-    grid-area: tel;
-}
-.formulario label:nth-child(5){
-    grid-area: asunto;
-}
-.formulario label:nth-child(6){
-    grid-area: mensaje;
-}
-.formulario button{
-    grid-area: boton;
-    background-color: white;
-    color: blue;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
+  }
+  .portada .contenido button {
     font-size: 20px;
-
+  }
 }
-@media(max-width:750px){
-    .formulario{
-        width: auto;
-        margin: 40px 0px;
-        border-radius:none;
-        grid-template-columns: 1fr;
-        grid-template-areas: "contactanos"
-                             "nombre"
-                             "email"
-                             "tel"
-                             "asunto"
-                             "mensaje"
-                             "boton";
-    }
-}
-
-/* Footer*/
-.footer{
-    background-color: blue;
-    color: white;
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-    */
-}
-.footer .compania{
-    width: 500px;
-    /*
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    */
-}
-
-.footer .compania .redes a i{
-    color: white;
+@media (max-width: 550px) {
+  .portada .contenido h1 {
     font-size: 24px;
+  }
+  .portada .contenido p {
+    font-size: 20px;
+  }
 }
-/*
-.footer .sucursales{
-    display: flex;
-    flex-wrap: wrap;
+.titulo-destacados {
+  margin: 10px;
 }
-*/
-.footer .sucursal{
-    width: 200px;
-    /*
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 10px;
-    */
+
+.tarjeta-destacada {
+  width: 460px;
+  margin: 10px;
+}
+.tarjeta-destacada img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+}
+.tarjeta-destacada .contenido button {
+  width: 100px;
+  padding: 5px 20px;
+  border: none;
+  margin: 10px;
+  background-color: #1205a0;
+  color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+  .tarjeta-destacada {
+    width: 250px;
+  }
+  .tarjeta-destacada img {
+    width: 100%;
+  }
+}
+/*Formulario de contactos */
+.formulario {
+  width: 700px;
+  background-color: #1205a0;
+  box-shadow: 1px 1px 7px 2px #000000;
+  margin: 40px auto;
+  border-radius: 5px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contactanos contactanos" "nombre      email" "tel         asunto" "mensaje     mensaje" "boton       boton";
+}
+
+.formulario h2 {
+  grid-area: contactanos;
+  color: white;
+  padding: 10px;
+}
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+}
+
+.formulario label input, .formulario label textarea {
+  background-color: #1205a0;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  color: white;
+}
+
+.formulario label:nth-child(2) {
+  grid-area: nombre;
+}
+
+.formulario label:nth-child(3) {
+  grid-area: email;
+}
+
+.formulario label:nth-child(4) {
+  grid-area: tel;
+}
+
+.formulario label:nth-child(5) {
+  grid-area: asunto;
+}
+
+.formulario label:nth-child(6) {
+  grid-area: mensaje;
+}
+
+.formulario button {
+  grid-area: boton;
+  background-color: white;
+  color: #1205a0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 750px) {
+  .formulario {
+    width: auto;
+    margin: 40px 0px;
+    border-radius: none;
+    grid-template-columns: 1fr;
+    grid-template-areas: "contactanos" "nombre" "email" "tel" "asunto" "mensaje" "boton";
+  }
+}
+/* Footer*/
+.footer {
+  background-color: #1205a0;
+  color: white;
+}
+
+.footer .compania {
+  width: 500px;
+}
+
+.footer .compania .redes a i {
+  color: white;
+  font-size: 24px;
+}
+
+.footer .sucursal {
+  width: 200px;
 }
 
 .footer .sucursal ul {
-    list-style: none;
-    /*
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    */
+  list-style: none;
 }
-.footer .sucursal ul li a{
-    color: white;
-    text-decoration: none;
+
+.footer .sucursal ul li a {
+  color: white;
+  text-decoration: none;
 }
-.footer .sucursal ul li a i{
-    margin-right: 5px;
+
+.footer .sucursal ul li a i {
+  margin-right: 5px;
 }
-/*
-@media(max-width:1200px){
-    .footer{
-        justify-content: start;
-    }
-}
-*/
 
 /* Fin footer */
+
+/*# sourceMappingURL=styles.css.map */
