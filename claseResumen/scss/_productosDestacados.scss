@@ -12,13 +12,7 @@
         object-fit: cover;
     }
     .contenido button{
-        width: 100px;
-        padding: 5px 20px;
-        border: none;
-        margin: 10px;
-        background-color: $bg-color;
-        color: white;
-        border-radius: 5px;
+       @include boton(red,white,16px,100px);
 }
 }
 

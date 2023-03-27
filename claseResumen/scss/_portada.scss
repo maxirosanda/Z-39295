@@ -19,13 +19,7 @@
             text-shadow: $sombra-texto;
         }
         button{
-            padding: 5px 20px;
-            font-size: 24px;
-            border: none;
-            margin: 10px;
-            background-color: $bg-color;
-            color: white;
-            border-radius: 5px;
+            @include boton(blue,white,20px,150px);
         }
     }
 }

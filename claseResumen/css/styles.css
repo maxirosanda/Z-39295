@@ -79,12 +79,13 @@
   text-shadow: 1px 1px 2px #000000;
 }
 .portada .contenido button {
+  width: 150px;
   padding: 5px 20px;
-  font-size: 24px;
+  font-size: 20px;
   border: none;
   margin: 10px;
-  background-color: #1205a0;
   color: white;
+  background-color: blue;
   border-radius: 5px;
 }
 
@@ -110,6 +111,17 @@
     font-size: 20px;
   }
 }
+.btn-promo {
+  width: 200px;
+  padding: 5px 20px;
+  font-size: 24px;
+  border: none;
+  margin: 10px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
+
 .titulo-destacados {
   margin: 10px;
 }
@@ -126,10 +138,11 @@
 .tarjeta-destacada .contenido button {
   width: 100px;
   padding: 5px 20px;
+  font-size: 16px;
   border: none;
   margin: 10px;
-  background-color: #1205a0;
   color: white;
+  background-color: red;
   border-radius: 5px;
 }
 

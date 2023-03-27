@@ -1,0 +1,22 @@
+@for $i from 1 to 11 {
+    .col-#{$i}{
+        width: 10% * $i;
+    }
+}
+@each $color in black,red,blue,yellow{
+    .bg-color-#{$color}{
+        background-color: $color;
+    }
+}
+
+@each $i in start,center,end{
+    .justify-content-#{$i}{
+        justify-content: $i;
+    }
+}
+
+@each $nombreColor , $color in (color1:#b61414,color2:#1dbdaf,color3:#dfdb04){
+    .#{$nombreColor}{
+        color: $color
+    }
+}

@@ -1,0 +1,21 @@
+@import "reset";
+@import "variables";
+@import "extend";
+@import "mixin";
+@import "ciclos";
+@import "navegador";
+
+
+.btn2{
+    @include btn(brown,white)
+}
+.btnFooter{
+    @include btn(blue,white)
+}
+.caja{
+    @include sizes(100px,200px,brown);
+}
+
+.caja2{
+    @include sizes(200px,200px ,blue);
+}

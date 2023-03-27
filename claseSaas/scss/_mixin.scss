@@ -1,0 +1,13 @@
+@mixin sizes($ancho,$alto,$bg){
+    width: $ancho;
+    height: $alto;
+    background-color: $bg;
+}
+@mixin btn ($bg,$color){
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: $bg;
+    color:$color;
+}

@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row, .container, .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.col-10 {
+  width: 100%;
+}
+
+.bg-color-black {
+  background-color: black;
+}
+
+.bg-color-red {
+  background-color: red;
+}
+
+.bg-color-blue {
+  background-color: blue;
+}
+
+.bg-color-yellow {
+  background-color: yellow;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.color1 {
+  color: #b61414;
+}
+
+.color2 {
+  color: #1dbdaf;
+}
+
+.color3 {
+  color: #dfdb04;
+}
+
+.navegador {
+  background-color: rgb(143, 11, 11);
+}
+.navegador ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+.navegador ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+.navegador ul li a:hover {
+  color: #b61414;
+}
+
+.row {
+  display: flex;
+}
+
+.btn2 {
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+}
+
+.btnFooter {
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+}
+
+.caja {
+  width: 100px;
+  height: 200px;
+  background-color: brown;
+}
+
+.caja2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
