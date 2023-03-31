@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tarjeta {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.tarjeta .content {
+  position: absolute;
+  text-align: center;
+  color: white;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: 1s;
+}
+.tarjeta .content h2 {
+  font-size: 18px;
+}
+.tarjeta img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  z-index: 1;
+  transition: 0.5s;
+}
+.tarjeta::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+  opacity: 0.7;
+  z-index: 2;
+  transform: translate(-350px, -350px) rotateZ(60deg);
+  transition: 1.5s;
+}
+.tarjeta:hover .content {
+  opacity: 100;
+  transform: translateY(0px);
+}
+.tarjeta:hover img {
+  transform: scale(1.5);
+}
+.tarjeta:hover::after {
+  transform: translate(0px, 0px) rotateZ(60deg);
+}
+
+/*# sourceMappingURL=style.css.map */
